@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "commands": [
+    {
+      "id": "devgamm2021.copy_guid",
+      "displayName": "Copy GUID",
+      "program": "python",
+      "args": "${WwiseProjectRoot}/Scripts/copy_guid.py ${id}",
+      "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+      "contextMenu": {
+        "basePath": "DevGAMM"
+      }
+    },
+    {
+      "id": "devgamm2021.show_events",
+      "displayName": "Show all events in Wwise project",
+      "program": "python",
+      "args": "${WwiseProjectRoot}/Scripts/show_events.py",
+      "mainMenu": {
+        "basePath": "DevGAMM"
+      }
+    },
+    {
+      "id": "devgamm2021.reset_faders",
+      "displayName": "Reset faders",
+      "program": "python",
+      "args": "${WwiseProjectRoot}/Scripts/reset_faders.py ${id}",
+      "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+      "redirectOutputs": true,
+      "contextMenu": {
+        "basePath": "DevGAMM"
+      }
+    },
+    {
+      "id": "devgamm2021.remove_invalid_events",
+      "displayName": "Remove invalid events",
+      "program": "python",
+      "args": "${WwiseProjectRoot}/Scripts/remove_invalid_events.py",
+      "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+      "redirectOutputs": true,
+      "mainMenu": {
+        "basePath": "DevGAMM"
+      }
+    },
+    {
+      "id": "devgamm2021.set_up_music_tracks",
+      "displayName": "Set up music tracks",
+      "program": "python",
+      "args": "${WwiseProjectRoot}/Scripts/",
+      "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+      "redirectOutputs": true,
+      "mainMenu": {
+        "basePath": "DevGAMM"
+      }
+    }
+  ]
+}
